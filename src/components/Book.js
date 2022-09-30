@@ -14,7 +14,7 @@ const Book = (props) => {
         <span>{author}</span>
       </div>
       <div className="actions">
-        <ul className='actions-list'>
+        <ul className="actions-list">
           <li>Comments</li>
           <li>Remove</li>
           <li>Edit</li>
