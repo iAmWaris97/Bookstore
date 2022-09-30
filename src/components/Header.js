@@ -4,7 +4,7 @@ const Header = () => (
   <header>
     <nav className="navbar">
       <span className="nav-logo">Bookstore CMS</span>
-      <ul className='nav-list'>
+      <ul className="nav-list">
         <li>
           <Link to="/" className="nav-item books">
             {' '}
