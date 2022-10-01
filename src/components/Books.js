@@ -1,6 +1,6 @@
 import './styles/Books.css';
-import Book from "./Book";
-import AddBook from "./AddBook";
+import Book from './Book';
+import AddBook from './AddBook';
 
 const Books = () => (
   <div className="books">
@@ -12,7 +12,7 @@ const Books = () => (
         <Book title="Data Structures in JavaScript" author="Waris Haleem" category="Data" />
       </li>
     </ul>
-    <hr className='line' />
+    <hr className="line" />
     <AddBook />
   </div>
 );

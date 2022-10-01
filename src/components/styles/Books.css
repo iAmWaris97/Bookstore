@@ -1,8 +1,8 @@
 .books {
   display: flex;
   flex-direction: column;
-  grid-gap: 0.938rem;
-  gap: 0.938rem;
+  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .book {
@@ -18,9 +18,8 @@
 }
 
 .line {
-  height: 0.125rem;
+  height: .25rem;
   background-color: #e8e8e8;
   width: 100%;
   margin: 2rem 0;
 }
-

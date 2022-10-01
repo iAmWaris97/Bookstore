@@ -17,11 +17,12 @@
   font-weight: 600;
   font-family: "Roboto Slab", serif;
 }
+
 .book-author {
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
-  margin-top: .25rem;
+  margin-top: 0.25rem;
 }
 
 .actions-list {
@@ -37,5 +38,5 @@
   font-weight: 300;
   align-items: center;
   cursor: pointer;
-  margin:  0 1rem;
+  margin-right: 1rem;
 }

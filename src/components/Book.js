@@ -1,5 +1,5 @@
-import './styles/Book.css'; 
-import PropTypes from "prop-types";
+import './styles/Book.css';
+import PropTypes from 'prop-types';
 
 const Book = (props) => {
   const { title, author, category } = props;
@@ -30,6 +30,7 @@ const Book = (props) => {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Book;
