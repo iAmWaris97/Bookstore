@@ -9,7 +9,7 @@ const Books = () => (
         <Book title="Introduction to Algorothms" author="Waris Haleem" category="Algorithms" />
       </li>
       <li className="book">
-        <Book title="Data Structure in JavaScript" author="Waris Haleem" category="Data" />
+        <Book title="Data Structures in JavaScript" author="Waris Haleem" category="Data" />
       </li>
     </ul>
     <hr className='line' />

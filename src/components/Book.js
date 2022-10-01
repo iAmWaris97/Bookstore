@@ -1,3 +1,4 @@
+import './styles/Book.css'; 
 import PropTypes from "prop-types";
 
 const Book = (props) => {
