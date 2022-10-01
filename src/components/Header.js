@@ -7,13 +7,13 @@ const Header = () => (
       <span className="nav-logo">Bookstore CMS</span>
       <ul className="nav-list">
         <li>
-          <Link to="/" className="nav-item books">
+          <Link to="/" className="nav-item active">
             {' '}
             Books
           </Link>
         </li>
         <li>
-          <Link to="/catagory" className="nav-item category">
+          <Link to="/catagory" className="nav-item">
             Category
           </Link>
         </li>

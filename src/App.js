@@ -8,10 +8,12 @@ function App() {
   return (
     <div className="bookstore">
       <Header />
-      <Routes>
-        <Route path="/" element={<Books />} />
-        <Route path="/catagory" element={<Category />} />
-      </Routes>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="/catagory" element={<Category />} />
+        </Routes>
+      </div>
     </div>
   );
 }
