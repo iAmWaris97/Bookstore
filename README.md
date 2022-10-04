@@ -16,7 +16,7 @@
 - **HTML**
 - **CSS**
 - **JavaScript**
-- **Gitflow flow**
+- **Gitflow**
 - **React**
 - **Redux**
 - **Babel**
@@ -69,6 +69,14 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 - GitHub: [@iAmWaris97](https://github.com/iAmWaris97)
 - Twitter: [@iAmWaris97](https://twitter.com/iAmWaris97)
 - LinkedIn: [Waris Haleem](https://www.linkedin.com/in/waris-haleem/)
+
+## Acknowledgments
+
+> Special thanks to the cofounder of redux for his complete course on redux actions and store methodes.
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
 
 ## 🤝 Contributing
 
