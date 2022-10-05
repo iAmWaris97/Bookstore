@@ -11,7 +11,7 @@ const Book = (props) => {
   };
 
   const {
-    id, key, title, author,
+    id, title, author,
   } = props;
   return (
     <div className="book-card">
@@ -28,7 +28,7 @@ const Book = (props) => {
         <div className="actions">
           <ul className="actions-list">
             <li>
-              <button type="button" id={key}>
+              <button type="button">
                 Comments
               </button>
             </li>
@@ -48,7 +48,6 @@ const Book = (props) => {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  key: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
 

@@ -8,10 +8,10 @@ const Books = () => {
   return (
     <div className="books">
       {bookList.map((b) => (
-        <ul key={0}>
+        // eslint-disable-next-line react/jsx-key
+        <ul>
           <li className="book">
             <Book
-              key={b.id + b.title}
               title={b.title}
               author={b.author}
               id={b.id}
