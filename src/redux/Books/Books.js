@@ -1,22 +1,22 @@
-import bookDetail from '../bookDetail';
+import bookDetails from '../bookDetail';
 
 const ADD = 'bookstore/components/books/ADD_BOOK';
 const REMOVE = 'bookstore/components/books/REMOVE_BOOK';
 const initialState = [
   {
-    id: '1s',
+    id: '0',
     title: 'Introduction to Algorothm',
     author: 'Waris Haleem',
   },
   {
-    id: '2s',
+    id: '1',
     title: 'Data Structures in JavaScript',
     author: 'Waris Haleem',
   },
 ];
 
 const adding = (state, detail) => {
-  const coming = bookDetail(detail);
+  const coming = bookDetails(detail);
   const comings = [...state, coming];
   return comings;
 };
