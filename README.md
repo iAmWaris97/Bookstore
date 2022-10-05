@@ -72,11 +72,7 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 ## Acknowledgments
 
-> Special thanks to the cofounder of redux for his complete course on redux actions and store methodes.
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+> Special thanks to the co-creator of Redux (Dan Abramov) for his complete course on redux actions and store methodes.
 
 ## 🤝 Contributing
 
