@@ -1,6 +1,4 @@
-const initalState = {
-  categories: [],
-};
+const initalState = '';
 
 const CHECKING_STATUS = 'bookstore/components/categories/CHECKING_STATUS';
 
