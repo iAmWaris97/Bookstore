@@ -1,9 +1,8 @@
 const bookDetails = (detail) => {
-  const { title, author, category } = detail;
+  const { title, author, ids } = detail;
   return {
     id: ids,
     title,
-    categories: category,
     authors: author,
   };
 };
