@@ -3,17 +3,37 @@ import bookDetail from '../bookDetail';
 const ADD = 'bookstore/components/books/ADD_BOOK';
 const REMOVE = 'bookstore/components/books/REMOVE_BOOK';
 const initialState = {
-  books: [],
+  books: [
+    {
+      id: '0',
+      title: 'Introduction to Algorothms',
+      author: 'Waris Haleem',
+    },
+    {
+      id: '1',
+      title: 'Data Structures in JavaScript',
+      author: 'Waris Haleem',
+    },
+  ],
 };
 
-const adding = (state, detail) => [...state.books, bookDetail(detail)];
-const removing = (state, id) => state.books.filter((x) => x.id !== id);
+const adding = (state, detail) => {
+  const coming = bookDetail(detail);
+  const comings = [...state, coming];
+  return comings;
+};
+
+const removing = (state, id) => {
+  const detail = state.filter((x) => x.id !== id);
+  return detail;
+};
+
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case ADD:
       return adding(state, action.detail);
     case REMOVE:
-      return removing(state);
+      return removing(state, action.id);
     default:
       return state;
   }
