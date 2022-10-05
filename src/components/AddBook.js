@@ -41,7 +41,7 @@ const AddBook = () => {
       <form className="add-form">
         <input placeholder="Book Title" className="title-inp" onChange={titleChange} />
         <input placeholder="Author" className="author-inp" onChange={authorChange} />
-        <button type="button" className="addbook-btn">
+        <button type="submit" className="addbook-btn">
           Add Book
         </button>
       </form>

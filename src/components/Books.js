@@ -8,16 +8,12 @@ const Books = () => {
   return (
     <div className="books">
       {bookList.map((b) => (
-        <ul key={0}>
-          <li className="book">
-            <Book
-              key={b.id + b.title}
-              title={b.title}
-              author={b.author}
-              id={b.id}
-            />
-          </li>
-        </ul>
+        <Book
+          key={b.id + b.title}
+          title={b.title}
+          author={b.author}
+          id={b.id}
+        />
       ))}
       <hr className="line" />
       <AddBook />

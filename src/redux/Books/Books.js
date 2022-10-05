@@ -4,13 +4,13 @@ const ADD = 'bookstore/components/books/ADD_BOOK';
 const REMOVE = 'bookstore/components/books/REMOVE_BOOK';
 const initialState = [
   {
-    id: '0',
-    title: 'Introduction to Algorothmsss',
+    id: '1s',
+    title: 'Introduction to Algorothm',
     author: 'Waris Haleem',
   },
   {
-    id: '1',
-    title: 'Data Structures in JavaScriptss',
+    id: '2s',
+    title: 'Data Structures in JavaScript',
     author: 'Waris Haleem',
   },
 ];
