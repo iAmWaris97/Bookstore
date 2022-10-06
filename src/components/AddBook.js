@@ -1,7 +1,7 @@
 import './styles/AddBook.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBoook } from '../redux/Books/Books';
+import { addBook } from '../redux/Books/Books';
 
 const AddBook = () => {
   const [book, setBook] = useState({
@@ -13,7 +13,7 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const submit = (e) => {
     e.preventDefault();
-    dispatch(addBoook(book));
+    dispatch(addBook(book));
     e.target.reset();
   };
 
