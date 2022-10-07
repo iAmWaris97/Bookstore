@@ -23,7 +23,7 @@ const Books = () => {
               <Book
                 key={book.item_id}
                 title={book.title}
-                author={Book.author}
+                author={book.author}
                 id={book.item_id}
               />
             </li>
