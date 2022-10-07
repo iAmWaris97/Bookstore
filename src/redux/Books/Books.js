@@ -10,28 +10,28 @@ const generateBook = (detail) => ({
   ...detail,
 });
 
-const domain = 'bookstore/books';
+const domain = 'bookstore/components/books';
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
-const uniqueId = 'ZfZlYIPklYMjNRYjepsF';
+const uniqueId = 'wIcNq0sQOGNWQAAoJURH';
 const endPoint = `${url}/apps/${uniqueId}/books`;
 const setup = {
   headers: {
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET,POST,DELETE',
+    'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
   },
 };
 
 const getBook = createAsyncThunk(
   `${domain}/getBook`,
   async () => {
-    const response = await axios.get(endPoint, setup);
-    return response.detail;
+    const res = await axios.get(endPoint, setup);
+    return res.data;
   },
 );
 
 const addBook = createAsyncThunk(
-  `${domain}/ADDBOOK`,
-  async (detail, apiThunk) => {
+  `${domain}/ADD_BOOK`,
+  async (detail, thunkAPI) => {
     const book = generateBook(detail);
     const response = await axios.post(endPoint, book, setup);
     const responseStatus = {
@@ -39,7 +39,7 @@ const addBook = createAsyncThunk(
       status: response.status,
       statusText: response.statusText,
     };
-    if (responseStatus.status === 201) apiThunk.dispatch(getBook());
+    if (responseStatus.status === 201) thunkAPI.dispatch(getBook());
     return responseStatus;
   },
 );
@@ -48,15 +48,15 @@ const endPointId = (itemId) => `${endPoint}/${itemId}`;
 
 const removeBook = createAsyncThunk(
   `${domain}/DELETEBOOK`,
-  async (itemId, apiThunk) => {
+  async (itemId, thunkAPI) => {
     const response = await axios.delete(endPointId(itemId), setup);
 
     const responseStatus = {
-      data: response.data,
+      detail: response.detail,
       status: response.status,
       statusText: response.statusText,
     };
-    if (responseStatus.status === 201) apiThunk.dispatch(getBook());
+    if (responseStatus.status === 201) thunkAPI.dispatch(getBook());
     return responseStatus;
   },
 );
@@ -64,10 +64,11 @@ const removeBook = createAsyncThunk(
 const booksSlice = createSlice({
   name: domain,
   initialState: {
-    loading: conditions.normal,
+    loading: conditions.idle,
     books: [],
     error: null,
   },
+
   reducers: {},
   extraReducers: (builder) => {
     builder

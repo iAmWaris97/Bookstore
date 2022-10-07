@@ -1,5 +1,5 @@
 const conditions = {
-  normal: 'NORMAL',
+  idle: 'IDLE',
   pending: 'PENDING',
   succeeded: 'SUCCEEDED',
   failed: 'FAILED',
