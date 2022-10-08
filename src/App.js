@@ -9,9 +9,9 @@ import store from './redux/configureStore';
 function App() {
   return (
     <Provider store={store}>
-      <div className="bookstore">
+      <div className="container">
         <Header />
-        <div className="container">
+        <div className="body-container">
           <Routes>
             <Route path="/" element={<Books />} />
             <Route path="/catagory" element={<Category />} />
