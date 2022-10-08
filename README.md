@@ -7,7 +7,7 @@
 > * Add a book.
 > * Remove a selected book.
 
-> It has two subpages: "Books" and "Categories."
+> This app is developed using React, Redux and API"
 
 ![Project Screenshot](./snapshot.PNG "Bookstore CMS")
 
@@ -19,7 +19,7 @@
 - **Gitflow**
 - **React**
 - **Redux**
-- **Babel**
+- **API**
 
 ## Getting Started
 

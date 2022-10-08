@@ -85,11 +85,11 @@
 }
 
 .current-chapter {
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #121212;
-  font-size: .813rem;
-  opacity: .5;
+  font-size: 0.813rem;
+  opacity: 0.5;
   text-transform: uppercase;
 }
 
