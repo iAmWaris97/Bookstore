@@ -1,10 +1,11 @@
 import './styles/Header.css';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
+    <span className="nav-logo">Bookstore CMS</span>
     <nav className="navbar">
-      <span className="nav-logo">Bookstore CMS</span>
       <ul className="nav-list">
         <li>
           <Link to="/" className="nav-item active">
@@ -19,6 +20,11 @@ const Header = () => (
         </li>
       </ul>
     </nav>
+    <span className="nav-logo">
+      <Link to="/" className="nav-profile">
+        <AccountCircleIcon />
+      </Link>
+    </span>
   </header>
 );
 
