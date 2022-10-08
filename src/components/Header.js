@@ -1,5 +1,5 @@
 import './styles/Header.css';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import PersonIcon from '@mui/icons-material/Person';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
@@ -22,7 +22,7 @@ const Header = () => (
     </nav>
     <span className="nav-logo">
       <Link to="/" className="nav-profile">
-        <AccountCircleIcon />
+        <PersonIcon id="profile" />
       </Link>
     </span>
   </header>

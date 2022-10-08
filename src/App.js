@@ -11,7 +11,7 @@ function App() {
     <Provider store={store}>
       <div className="container">
         <Header />
-        <div className="body-container">
+        <div className="pages-container">
           <Routes>
             <Route path="/" element={<Books />} />
             <Route path="/catagory" element={<Category />} />

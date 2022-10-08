@@ -9,6 +9,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#profile {
+  color: #0290ff;
+  font-size: 5rem;
+}
+
 .nav-logo {
   font-size: 1.875rem;
   font-weight: 700;
