@@ -3,9 +3,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header>
-    <span className="nav-logo">Bookstore CMS</span>
+  <header className="header">
     <nav className="navbar">
+      <span className="nav-logo">Bookstore CMS</span>
       <ul className="nav-list">
         <li>
           <Link to="/" className="nav-item active">
@@ -20,7 +20,7 @@ const Header = () => (
         </li>
       </ul>
     </nav>
-    <span className="nav-logo">
+    <span className="profile-icon">
       <Link to="/" className="nav-profile">
         <PersonIcon id="profile" />
       </Link>
